@@ -1,0 +1,23 @@
+.movie-card {
+  &__overlay {
+    z-index: 100;
+    background-color: rgba(211, 35, 35, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+    svg {
+      font-size: 6.4rem;
+    }
+  }
+
+  &:hover &__overlay {
+    opacity: 1;
+  }
+}

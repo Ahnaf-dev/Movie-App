@@ -1,0 +1,14 @@
+@use "../../sass/index" as *;
+
+.row-slider {
+  .swiper-slide {
+    width: 20%;
+    @include mobile {
+      width: 50%;
+    }
+
+    @include tablet {
+      width: 40%;
+    }
+  }
+}
