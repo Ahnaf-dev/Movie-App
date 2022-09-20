@@ -1,6 +1,23 @@
-# Getting Started with Create React App
+# Movie App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Movie App that fetches API from theMovieDB and dynamically displays into UI
+
+Site: https://effervescent-sunshine-92fc28.netlify.app/
+
+## Features
+
+- Custom Axios Config with relevant API query to fetch data from TMDB API
+- Object of methods that generate dynamic API endpoints and returns the fetched data through Axios GET request
+- Dynamic Genre component that generates genres based on array of numbers
+- Carousels with SwiperJS
+- Dynamic Carousel row component that generates title and relevant cards with given props
+- Search functionality from API
+- Load more button that generates new page from API and adds onto previous page
+- Page to see movies in detail by fetching provided ID and category from router props and fetching to API
+- Custom Material UI theme for typography
+- Coded in TypeScript
+- Responsive Across All Devices
+
 
 ## Available Scripts
 
