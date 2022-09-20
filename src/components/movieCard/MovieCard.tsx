@@ -25,7 +25,10 @@ function MovieCard({
       <Box
         className="movie-card"
         sx={{
-          "& img": { width: "100%", height: "50rem" },
+          "& img": {
+            width: "100%",
+            height: { xs: "30rem", md: "40rem", xl: "50rem" },
+          },
           position: "relative",
         }}
       >
