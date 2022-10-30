@@ -1,4 +1,5 @@
 .movie-card {
+  cursor: pointer;
   &__overlay {
     z-index: 100;
     background-color: rgba(211, 35, 35, 0.6);

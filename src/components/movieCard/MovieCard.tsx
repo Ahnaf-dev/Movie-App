@@ -21,7 +21,13 @@ function MovieCard({
   //     ? item.release_date.split("-")[0]
   //     : item.first_air_date.split("-")[0];
   return (
-    <Box onClick={() => navigate(url)}>
+    <Box
+      tabIndex={0}
+      onKeyUp={(e: React.KeyboardEvent<HTMLElement>) =>
+        e.code === "Enter" ? navigate(url) : ""
+      }
+      onClick={() => navigate(url)}
+    >
       <Box
         className="movie-card"
         sx={{
