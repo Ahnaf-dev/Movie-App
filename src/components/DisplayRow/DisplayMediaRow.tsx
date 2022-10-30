@@ -37,7 +37,7 @@ function DisplayMediaRow({ category, type, title, id }: options) {
       setMedia(response.results);
     };
     getItems();
-  }, []);
+  }, [id]);
   return (
     <Box className="row-slider">
       <Stack direction="row" spacing={3} sx={{ mb: 4, alignItems: "center" }}>

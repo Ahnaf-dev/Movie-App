@@ -13,7 +13,7 @@ function Video({ category, item }: { category: "movie" | "tv"; item: any }) {
       setVideo(response.results.slice(0, 1));
     };
     getVideo();
-  }, []);
+  }, [item]);
 
   if (!video) {
     return null;
@@ -36,6 +36,7 @@ function Video({ category, item }: { category: "movie" | "tv"; item: any }) {
         Video
       </Typography>
       <iframe
+        style={{ maxWidth: "900px" }}
         width="100%"
         height="500"
         src={`https://www.youtube.com/embed/${video[0].key}`}

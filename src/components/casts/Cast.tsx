@@ -14,7 +14,7 @@ function Cast({ category, item }: { category: "movie" | "tv"; item: any }) {
       setCast(response.cast.slice(0, 5));
     };
     getCast();
-  }, []);
+  }, [item]);
 
   if (!cast) {
     return null;
